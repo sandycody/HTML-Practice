@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HTML Forms </title>
+</head>
+
+<body style="background-color: lightyellow;">
+    <h2> Registration Form </h2>
+    <form action="form.php">
+        <div>
+            <label for="name"> Name: </label>
+            <input type="text" name="MyName" id="name" placeholder="Enter your Name">
+        </div>
+        <br>
+        <div>
+            <label for="email"> Email: </label>
+            <input type="email" name="MyEmail" id="email" placeholder="Enter your Email">
+        </div>
+        <br>
+        <div>
+            Gender:
+            <label for="Male">
+                <input type="radio" name="MyGender" id="Male"> Male
+            </label>
+            <label for="Female">
+                <input type="radio" name="MyGender" id="Female"> Female
+            </label>
+            <label for="Other">
+                <input type="radio" name="MyGender" id="Other"> Other
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="date"> Date: </label>
+            <input type="date" name="MyDate" id="date">
+        </div>
+        <br>
+        <div>
+            <label for="role"> Role: </label>
+            <input type="text" name="MyRole" id="role" placeholder="Enter your Role">
+        </div>
+        <br>
+        <div>
+            <label for="stream"> Stream: </label>
+            <select name="MyStream" id="stream">
+                <option value="default" selected> Select Stream </option>
+                <option value="science"> Science </option>
+                <option value="commerce"> Commerce </option>
+                <option value="arts"> Arts </option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="num"> Score: </label>
+            <input type="number" name="MyScore" id="num">
+        </div>
+        <br>
+        <div>
+            <label for="eligibility"> Are you Eligible? </label>
+            <input type="checkbox" name="MyEligibility" id="eligibility" checked>
+        </div>
+        <br>
+        <div>
+            <label for="whyjoin"> Why you want to join? </label> <br>
+            <textarea name="MySelf" id="whyjoin" cols="70" rows="10"> </textarea>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+
+</body>
+
+</html>
